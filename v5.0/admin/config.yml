@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: FELHASZNALO/REPO_NEV
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "menu"
+    label: "Menü"
+    folder: "content/menu"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Név", name: "title", widget: "string"}
+      - {label: "Kategória", name: "category", widget: "string"}
+      - {label: "Ár", name: "price", widget: "string"}
+      - {label: "Leírás", name: "description", widget: "text"}
+      - {label: "Sorrend", name: "order", widget: "number"}
+
+  - name: "events"
+    label: "Események"
+    folder: "content/events"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Cím", name: "title", widget: "string"}
+      - {label: "Dátum", name: "date", widget: "datetime"}
+      - {label: "Helyszín", name: "location", widget: "string"}
+      - {label: "Kép", name: "image", widget: "image"}
+      - {label: "Leírás", name: "description", widget: "markdown"}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szimpla Sepsiszentgyörgy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body onload="setup()">
+    <header>
+        <div class="header-container">
+            <img src="img/pnglogo.png" alt="Szimpla Sepsiszentgyörgy" id="logo" >
+            <h1 id="hamIcon" onclick="showMenu()">≡</h1>
+            <nav>
+                <h1 id="closeMenu" onclick="hideMenu()">×</h1>
+                <table class="nav-table">
+                <tr>
+                    <td>
+                        <img src="img/esemenyek.png" alt="Események ikon" class="navImg"><br>
+                        <a href="#events">Események</a><br>
+                    </td>
+                    <td>
+                        <img src="img/menu.png" alt="Menü ikon" class="navImg"><br>
+                        <a href="#menu">Menü</a><br>
+                    </td>
+                    <td>
+                        <img src="img/kezmuves_sorok.png" alt="Kézműves sörök ikon" class="navImg"><br>
+                        <a href="#craftBeers">Kézműves sörök</a><br>
+                    </td>
+                    <td>
+                        <img src="img/merch.png" alt="Merchök ikon" class="navImg"><br>
+                        <a href="#merch">Merch</a><br>
+                    </td>
+                    <td>
+                        <img src="img/kapcsolat.png" alt="Kapcsolat ikon" class="navImg"><br>
+                        <a href="#contact">Kapcsolat</a><br>
+                    </td>
+                    <td>
+                        <img src="img/rolunk.png" alt="Rólunk ikon" class="navImg"><br>
+                        <a href="#aboutUs" style="font-size: small; font-style: italic; font-family: Arial, Helvetica, sans-serif;">v5.0.a</a><br>
+                    </td>
+                </tr>
+                </table>
+            </nav>
+        </div>
+        
+    </header>
+    <section class="midHeader">
+        <img src="img/blackboard.jpg.png" id="program" alt="">
+        <img src="img/beers.png" alt="" id="beersIcon">
+        <img src="img/open.png" alt="" id="openIcon">
+        <img src="img/closed.png" alt="" id="closedIcon" style="display: none;">
+    </section>
+    <main>
+
+        <h1 id="events">Események</h1>
+        <div class="events">
+            <div class="event">
+                <img src="https://scontent.fotp3-4.fna.fbcdn.net/v/t39.30808-6/540973645_1253694686768557_2906919584745237230_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=58LDbTipZncQ7kNvwF_1pZa&_nc_oc=AdlpaczT3LswxmEFFbIIn6D3Ds3okXXx117MFtKCXnr8yM2dv9LaXDe8x7Ou4YuuiA0&_nc_zt=23&_nc_ht=scontent.fotp3-4.fna&_nc_gid=UtcRYBnGG8zbQIXRG-MC4g&oh=00_AfaRe1vDWpPRIkp4bjnbDoYUbOmEJFAm1ehdljybzNnxIg&oe=68BF5F80" alt="Moonlight Grooves - borítókép">
+                <h2>Moonlight Grooves</h2>
+                <p>Dátum: Minden péntek, 20:00 - 23:00</p>
+                <p>Helyszín: Szimpla Sepsiszentgyörgy</p>
+                <p>Leírás: Élő jazz zene a legjobb helyi zenészekkel. Gyere és élvezd a hangulatot!</p>
+            </div>
+            <div class="event">
+                <img src="https://scontent.fotp3-4.fna.fbcdn.net/v/t39.30808-6/540973645_1253694686768557_2906919584745237230_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=58LDbTipZncQ7kNvwF_1pZa&_nc_oc=AdlpaczT3LswxmEFFbIIn6D3Ds3okXXx117MFtKCXnr8yM2dv9LaXDe8x7Ou4YuuiA0&_nc_zt=23&_nc_ht=scontent.fotp3-4.fna&_nc_gid=UtcRYBnGG8zbQIXRG-MC4g&oh=00_AfaRe1vDWpPRIkp4bjnbDoYUbOmEJFAm1ehdljybzNnxIg&oe=68BF5F80" alt="Moonlight Grooves - borítókép">
+                <h2>Karaoke Night</h2>
+                <p>Dátum: Minden szombat, 21:00 - 01:00</p>
+                <p>Helyszín: Szimpla Sepsiszentgyörgy</p>
+                <p>Leírás: Mutasd meg a hangod és énekelj kedvenc dalaidat barátaiddal!</p>
+            </div>
+            <div class="event">
+                <img src="https://scontent.fotp3-4.fna.fbcdn.net/v/t39.30808-6/540973645_1253694686768557_2906919584745237230_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=58LDbTipZncQ7kNvwF_1pZa&_nc_oc=AdlpaczT3LswxmEFFbIIn6D3Ds3okXXx117MFtKCXnr8yM2dv9LaXDe8x7Ou4YuuiA0&_nc_zt=23&_nc_ht=scontent.fotp3-4.fna&_nc_gid=UtcRYBnGG8zbQIXRG-MC4g&oh=00_AfaRe1vDWpPRIkp4bjnbDoYUbOmEJFAm1ehdljybzNnxIg&oe=68BF5F80" alt="Moonlight Grooves - borítókép">
+                <h2>Quiz Night</h2>
+                <p>Dátum: Minden szerda, 19:00 - 22:00</p>
+                <p>Helyszín: Szimpla Sepsiszentgyörgy</p>
+                <p>Leírás: Teszteld tudásodat és nyerj izgalmas díjakat csapatoddal!</p>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia sunt praesentium recusandae assumenda necessitatibus fugit maxime sequi corrupti, debitis quisquam id culpa, a est iure eum sapiente, magni libero. Sint deserunt explicabo harum quo, minima nesciunt qui nam, esse ipsum eligendi aut dolorem totam? Aliquam repellendus necessitatibus non mollitia. Veritatis recusandae odio eum nemo esse! Natus quasi inventore est exercitationem, quas beatae sed excepturi facere neque, possimus, atque voluptate. Recusandae voluptates numquam aspernatur deleniti saepe eius quas nulla culpa molestiae commodi, omnis ipsa enim vel quam libero necessitatibus sequi error quasi consequatur excepturi, asperiores aut ex inventore! Magni nemo et asperiores magnam consectetur sapiente. Ad natus soluta perspiciatis, atque sed laborum ipsum nulla dicta dolor reiciendis minima enim culpa dignissimos, aut est facilis hic nostrum molestiae minus quae magni porro suscipit? Praesentium, quas nisi? Culpa totam sed animi ipsam exercitationem! Voluptates, qui dolore ea dignissimos animi accusamus facilis quo, debitis quod minima, ut recusandae maxime nihil incidunt! Nemo, similique! Eos, nisi similique? Aliquam ad quis itaque dolorum illum accusamus dolores odit, possimus cupiditate, nesciunt tempore et aspernatur porro aliquid ratione quidem voluptas fuga temporibus neque sed minima consequatur. Deleniti, eveniet. Distinctio repellendus, vel mollitia asperiores in aliquam assumenda molestias quos voluptate? Repudiandae eum fuga quibusdam, vitae, dicta in est quis culpa quidem doloribus nulla consectetur saepe aut fugiat maiores quaerat autem eius provident deserunt veritatis quos ut cupiditate amet cum? Assumenda minus dicta aspernatur esse velit cum ducimus error dolore quae? Ea molestiae in eum sed magni, unde dicta possimus recusandae. Ex, labore. Perspiciatis quam in quo libero. Consectetur necessitatibus, repellat ab ratione autem quisquam maxime laudantium sequi, dolores beatae est, quibusdam qui rerum consequuntur ex? Eveniet, omnis corrupti? Expedita odio exercitationem reprehenderit rem aperiam ducimus non, numquam error porro dolores velit commodi laborum sunt aut! Modi, quia quae! Voluptas nostrum vitae ipsam eos quibusdam alias, aut quisquam numquam quidem non omnis, autem iste iure earum mollitia cumque? Ipsum suscipit similique voluptas molestias veniam accusamus dolorum delectus libero quaerat repudiandae sint modi, soluta molestiae facere nulla numquam ad in pariatur autem maxime ab. Amet deserunt architecto ex labore deleniti qui minima rem facilis velit expedita earum ipsum doloremque natus ab enim pariatur, aspernatur sunt. Nesciunt libero, quasi eum corrupti suscipit, expedita rerum quae error iusto tempora cum impedit odit dolor magnam! Tenetur ducimus, temporibus voluptatum ut itaque numquam a in earum id omnis excepturi iste, dolores molestiae tempora sit reiciendis dolor quasi dolore doloremque deserunt magni aliquid? Fuga harum voluptatum nostrum, voluptates accusamus soluta provident eum molestiae natus consequatur possimus numquam earum, expedita reprehenderit autem illo, aliquam non explicabo. Similique at recusandae temporibus alias soluta, quos veritatis. Voluptas porro eius earum accusamus voluptatum tempora ea, consectetur ipsum cum nobis quas ullam, vero explicabo saepe. Nam, perspiciatis vero culpa aspernatur optio itaque aut porro sed, ipsam laboriosam aliquid quo repudiandae repellendus minus libero, sunt maxime asperiores aliquam voluptatibus accusantium voluptatum ea cum? Ipsum laborum nisi quos recusandae unde id obcaecati at ullam non, corporis quia. Doloribus quidem quae amet corrupti.</p>
+    </main>
+</body>
+</html>
+
+<!-- 
+
+ELSO TODO:
+    - scrollozasra a felso navigacios sav maradjon ott de legyen hattere
+    - szemafor backend
+    kovetkezo todo:
+
+TO-DO:  - Optimalizalni mobilra
+        - atirni az esemenyt!!!
+        - megtervezni a menu elemeit
+        - megtervezni a kapcsolatot
+        - megtervezni a rolunkat
